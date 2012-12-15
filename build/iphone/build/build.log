@@ -5,7 +5,7 @@ reporting an issue to help us understand your environment, build settings
 and aid in debugging. Please attach this log to any issue that you report.
 ================================================================================
 
-Starting build at 12/04/12 23:33
+Starting build at 12/15/12 16:38
 
 Build details:
 
@@ -23,8 +23,7 @@ Script arguments:
    com.andreybuligin.quickNotes
    QuickNotes
    universal
-   ipad
-   
+   iphone
 
 Building from: /Users/andrey/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/iphone
 Platform: Darwin Kernel Version 12.2.1: Thu Oct 18 16:32:48 PDT 2012; root:xnu-2050.20.9~2/RELEASE_X86_64
@@ -77,4 +76,6 @@ Generated the following stylecode code:
 
 	</dict>
 </plist>
++ Detected plugin: ti.alloy/1.0
++ Loading compiler plugin at /Users/andrey/Sites/Titanium_Studio_Workspace/QuickNotes/plugins/ti.alloy/plugin.py
 Finishing build
