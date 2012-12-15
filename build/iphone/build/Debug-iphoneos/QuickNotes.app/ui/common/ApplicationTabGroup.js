@@ -1,0 +1,1 @@
+/Users/andrey/Sites/Titanium_Studio_Workspace/QuickNotes/Resources/ui/common/ApplicationTabGroup.js
