@@ -5,4 +5,8 @@
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	color: "#000"
-} 
+},
+"#table": {
+  top: "90dp",
+  bottom: 0
+}

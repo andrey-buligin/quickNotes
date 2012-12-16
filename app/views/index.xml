@@ -1,5 +1,7 @@
 <Alloy>
 	<Window class="container">
 		<Label id="label" onClick="doClick">Hello, World</Label>
+		<Require type="widget" src="com.appcelerator.searchForBooks" id="sfb"/>
+		<TableView id="table"/>
 	</Window>
 </Alloy>

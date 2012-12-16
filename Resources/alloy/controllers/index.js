@@ -21,7 +21,33 @@ function Controller() {
     $.__views.label.on("click", function() {
         doClick.apply(this, Array.prototype.slice.apply(arguments));
     });
+    $.__views.sfb = Alloy.createWidget("com.appcelerator.searchForBooks", "widget", {
+        id: "sfb"
+    });
+    $.__views.sfb.setParent($.__views.index);
+    var __alloyId2 = [];
+    $.__views.table = A$(Ti.UI.createTableView({
+        top: "90dp",
+        bottom: 0,
+        id: "table"
+    }), "TableView", $.__views.index);
+    $.__views.index.add($.__views.table);
     _.extend($, $.__views);
+    var animation = require("alloy/animation");
+    $.sfb.setHandlers({
+        success: function(books) {
+            var data = [];
+            _.each(books, function(book) {
+                var args = {
+                    title: book.title,
+                    authors: book.authors,
+                    image: book.image
+                }, row = Alloy.createController("row", args).getView();
+                data.push(row);
+            });
+            $.table.setData(data);
+        }
+    });
     $.index.open();
     _.extend($, exports);
 }
